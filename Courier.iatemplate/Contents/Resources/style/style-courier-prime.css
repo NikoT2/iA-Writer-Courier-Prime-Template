@@ -1,0 +1,17 @@
+/* Apply Courier Prime font family to all elements */
+
+html,
+html :lang(x-default),
+html :lang(en),
+html :lang(ja),
+html :lang(ko),
+html :lang(zh-Hans),
+html :lang(zh-Hant),
+html :lang(zh-Hant-HK),
+html :lang(x-default-ja),
+html :lang(x-default-ko),
+html :lang(x-default-zh-Hans),
+html :lang(x-default-zh-Hant),
+html :lang(x-default-zh-Hant-HK) {
+  font-family: "Courier Prime", "Courier New", monospace;
+}

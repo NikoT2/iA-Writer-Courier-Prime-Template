@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test === Highlight Syntax</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="highlight-processor.js"></script>
+</head>
+<body>
+    <h1>Test === Highlight Syntax</h1>
+    
+    <p>Testing the === syntax functionality:</p>
+    
+    <h2>Basic Tests</h2>
+    <p>===yellow:This should be yellow===</p>
+    <p>===green:This should be green===</p>
+    <p>===blue:This should be blue===</p>
+    <p>===red:This should be red===</p>
+    
+    <h2>Mixed Text Test</h2>
+    <p>This paragraph contains ===yellow:yellow text=== and ===green:green text=== and ===red:red text===.</p>
+    
+    <h2>Invalid Color Test</h2>
+    <p>===invalid:This should default to yellow===</p>
+    
+    <h2>Case Insensitive Test</h2>
+    <p>===GREEN:This should be green (uppercase)===</p>
+    <p>===Blue:This should be blue (mixed case)===</p>
+    
+    <h2>Multi-word Color Test</h2>
+    <p>===light-gray:This should be light gray===</p>
+    
+    <h2>Edge Cases</h2>
+    <p>===yellow:Text with === inside=== (should not break)</p>
+    <p>===yellow:Text with : colon inside===</p>
+    
+    <hr>
+    
+    <p><em>If you can see highlighted text above, the === syntax is working correctly!</em></p>
+    
+    <script>
+        // Test the processor function directly
+        console.log('Testing highlight processor...');
+        const testText = '===green:Test text===';
+        const result = window.HighlightProcessor.processHighlights(testText);
+        console.log('Input:', testText);
+        console.log('Output:', result);
+    </script>
+</body>
+</html> 
