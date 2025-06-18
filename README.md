@@ -193,5 +193,3 @@ For questions or issues:
 - Ensure you're using a compatible version of iA Writer
 
 ---
-
-**Happy writing with Courier Prime!** ✍️
